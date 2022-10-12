@@ -1,0 +1,28 @@
+$background: hsl(218, 23%, 16%);
+$card: hsl(217, 19%, 24%);
+$neon: hsl(150, 100%, 66%);
+$text: hsl(193, 38%, 86%);
+
+body {
+    background: $background;
+}
+
+.card {
+    background: $card;
+}
+
+.advice-title {
+    color: $neon;
+}
+
+.btn {
+    background: $neon;
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px $neon;
+}
+
+.advice-text {
+    color: $text;
+}
