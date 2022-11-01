@@ -6,6 +6,10 @@ body {
     justify-content: center;
 }
 
+img {
+    max-width: 100%;
+}
+
 .card {
     position: relative;
     display: flex;
@@ -32,8 +36,32 @@ body {
     font-size: 28px;
 }
 
-.dividor {
-    margin-bottom: 2rem;
+.card picture img {
+    background-color: var(--grayish-blue);
+    position: relative;
+}
+
+.card picture::before {
+    content: "";
+    width: 40%;
+    height: 1px;
+    background-color: var(--light-cyan);
+    right: 1.25rem;
+    bottom: 3.8rem;
+    position: absolute;
+    display: block;
+    z-index: 99;
+}
+
+.card picture::after {
+    content: "";
+    width: 45%;
+    height: 1px;
+    background-color: var(--light-cyan);
+    left: 0;
+    bottom: 0.74rem;
+    position: relative;
+    display: block;
 }
 
 .btn {
@@ -57,3 +85,8 @@ body {
     -o-transition: all .3s ease;
 }
 
+@media (min-width: 500px) {
+    .card {
+        max-width: 480px;
+    }
+}

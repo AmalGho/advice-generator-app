@@ -15,18 +15,24 @@
 
   <div class="card">
     
-    <p class="advice-title">advice #<span id="advice-id">117</span> </p>
+    <p class="advice-title" id="title"></p>
 
-    <p class="advice-text">
-      "Frontend Mentor | Advice generator app"
-    </p>
+    <p class="advice-text" id="text"></p>
 
-    <img class="dividor" src="/images/pattern-divider-desktop.svg" alt="dividor">
+    <picture>
+      <source
+        media="(min-width: 768px)"
+        srcset="/images/pattern-divider-desktop.svg"
+      />
+      <img src="/images/pattern-divider-mobile.svg" alt="" />
+    </picture>
 
-    <button class="btn">
+    <button class="btn" onclick="fetchAdvice()">
       <img src="/images/icon-dice.svg" alt="">
     </button>
   </div>
 
+
+  <script src="js/main.js"></script>
 </body>
 </html>
